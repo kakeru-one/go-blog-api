@@ -7,59 +7,32 @@ import (
 )
 
 func HelloHandler(w http.ResponseWriter, req *http.Request) {
-	if req.Method == http.MethodGet {
-		io.WriteString(w, "Hello, world!\n")
-
-		// もし、req の中の Method フィールドが GET でなかったら
-	} else {
-		// Invalid methodというレスポンスを、405番のステータスコードと共に返す
-		http.Error(w, "Invalid method", http.StatusMethodNotAllowed)
-	}
+	io.WriteString(w, "Hello, world!\n")
 }
 
 // /article のハンドラ
 func PostArticleHandler(w http.ResponseWriter, req *http.Request) {
-	if req.Method == http.MethodPost {
-		io.WriteString(w, "Posting Article...\n")
-	} else {
-		http.Error(w, "Invalid method", http.StatusMethodNotAllowed)
-	}
+	io.WriteString(w, "Posting Article...\n")
 }
 
 // /article/list のハンドラ
 func ArticleListHandler(w http.ResponseWriter, req *http.Request) {
-	if req.Method == http.MethodGet {
-		io.WriteString(w, "Article List\n")
-	} else {
-		http.Error(w, "Invalid method", http.StatusMethodNotAllowed)
-	}
+	io.WriteString(w, "Article List\n")
 }
 
 // /article/1 のハンドラ
 func ArticleDetailHandler(w http.ResponseWriter, req *http.Request) {
-	if req.Method == http.MethodGet {
-		articleID := 1
-		resString := fmt.Sprintf("Article No.%d\n", articleID)
-		io.WriteString(w, resString)
-	} else {
-		http.Error(w, "Invalid method", http.StatusMethodNotAllowed)
-	}
+	articleID := 1
+	resString := fmt.Sprintf("Article No.%d\n", articleID)
+	io.WriteString(w, resString)
 }
 
 // /article/nice のハンドラ
 func PostNiceHandler(w http.ResponseWriter, req *http.Request) {
-	if req.Method == http.MethodPost {
-		io.WriteString(w, "Posting Nice...\n")
-	} else {
-		http.Error(w, "Invalid method", http.StatusMethodNotAllowed)
-	}
+	io.WriteString(w, "Posting Nice...\n")
 }
 
 // /comment のハンドラ
 func PostCommentHandler(w http.ResponseWriter, req *http.Request) {
-	if req.Method == http.MethodPost {
-		io.WriteString(w, "Posting Comment...\n")
-	} else {
-		http.Error(w, "Invalid method", http.StatusMethodNotAllowed)
-	}
+	io.WriteString(w, "Posting Comment...\n")
 }
