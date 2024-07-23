@@ -1,0 +1,6 @@
+{
+  "editor.renderWhitespace": "all",
+  "[go]": {
+    "editor.tabSize": 4
+  }
+}
