@@ -1,0 +1,22 @@
+{
+  "ID": 1,
+  "Title": "first article",
+  "Contents": "This is the test article.",
+  "UserName": "saki",
+  "NiceNum": 1,
+  "CommentList": [
+    {
+      "CommentID": 1,
+      "ArticleID": 1,
+      "Message": "this is the message",
+      "CreatedAt": "2024-12-03T00:50:24.832859+09:00"
+    },
+    {
+      "CommentID": 2,
+      "ArticleID": 1,
+      "Message": "this is the message 2",
+      "CreatedAt": "2024-12-03T00:50:24.832859+09:00"
+    }
+  ],
+  "CreatedAt": "2024-12-03T00:50:24.832859+09:00"
+}
