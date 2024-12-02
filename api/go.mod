@@ -1,4 +1,4 @@
-module github.com/ochi-sho-private-study/go-blog-api
+module github.com/kakeru-one/go-blog-api
 
 go 1.22.4
 

@@ -1,5 +1,6 @@
 {
   "editor.renderWhitespace": "all",
+  "go.gopath": "/Users/s-ochi/go",
   "[go]": {
     "editor.tabSize": 4
   }
